@@ -7,7 +7,7 @@
 <style>
 img{
     width:150px;
-    height:150px;
+    height:130px;
 }
 table {
     border: 0.02em solid #0000ff;
@@ -83,10 +83,10 @@ h2,h3,h4,h5,h6{
 <table align="center">
 	<tr>
 		<td colspan="3">
-			<img src="{{ asset('log.jpeg') }}">
+			<img src="{{ asset('adsu.jpg') }}">
            <div id="me" >
 		   <font id="h1">
-            FPM STAFF RECRUITMENT
+            ADSU STAFF RECRUITMENT
 			</font><br>
 			<font id="h2">
 			Mubi, Adamawa State
@@ -103,7 +103,15 @@ h2,h3,h4,h5,h6{
 	<tr>
 		<td  colspan="3" class="head">
 			<h4>Application Detail</h4>
-            </td>
+            	<center>
+				<button onclick="print()" class="btn btn-primary">
+				<i class="mdi mdi-printer"></i> Print
+				</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="dashboard" class="btn btn-light">
+				<i class="mdi mdi-arrange-send-backward"></i> Cancel
+				</a>
+			</center>
+		</td>
 	</tr>
 
 
@@ -149,9 +157,7 @@ h2,h3,h4,h5,h6{
 	</tr>
 
 	<tr>
-		<td  colspan="3" class="head">
-			<h4>Persoal Information</h4>
-		</td>
+		
 		<td>
 			
 		</td>
@@ -371,19 +377,5 @@ h2,h3,h4,h5,h6{
 			<p align="justify">I&nbsp;<b>{{ucwords($userInfo->last_name)}}&nbsp;{{ucwords($userInfo->first_name)}}&nbsp;{{ucwords($userInfo->other_name)}}</b> comfirm that the information given are to the best<br> 
 			of my knowledge and i will abide b the institution code for Employment. </p>
 		</td>
-		<td>
-			
-		</td>
-		<td>
-			
-		</td>
-	</tr><tr>
-		<td  class="head"  colspan="3" >
-			<center>
-				<button onclick="print()" class="btn btn-primary">
-				<i class="mdi mdi-printer"></i> Print
-				</button>
-			</center>
-		</td>
 	</tr>
-</table>
+		</table>

@@ -35,7 +35,7 @@
               <span class="nav-profile-name">Logout</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="appDropdown">
-                <a class="dropdown-item">
+                <a class="dropdown-item" href="{{Config::get('constants.options.sitelink')}}logout">
                 <i class="mdi mdi-logout text-primary"></i>
                 Logout
                 </a>
@@ -68,12 +68,12 @@
           <li class="nav-item active">
             <a class="nav-link" href="applicant">
             <i class="mdi mdi-application"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apply</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue Application</span>
             </a>
           </li>
            
           <li class="nav-item">
-            <a class="nav-link" href="aptitudetest">
+            <a class="nav-link" href="starttest">
             <i class="mdi mdi-pencil menu-icon"></i>
             <span class="menu-title">Take Apptitude Test </span>
             </a>
@@ -87,7 +87,7 @@
            <li class="nav-item">
             <a class="nav-link" href="appointmentletter">
             <i class="mdi mdi-printer"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Appointment Letter</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Acceptence Letter</span>
             </a>
           </li>
          </ul>
@@ -173,7 +173,7 @@
                           <input type="text" class="form-control" name="ParmannentAddress" id="ParmannentAddress" placeholder="Parmannent Address">
                         </div>
                         <div class="form-group col-md-8">
-                          <label>Phone</label>
+                          <label>Phone no2</label>
                           <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
                         </div>
                         

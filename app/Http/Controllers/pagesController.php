@@ -84,6 +84,9 @@ class pagesController extends Controller
     public function  timer (){
         return view('applicant.timer');
     }
+    public function  instruction (){
+        return view('applicant.instruction');
+    }
 
 }
 

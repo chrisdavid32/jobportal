@@ -18,11 +18,7 @@
               <span class="nav-profile-name">Logout</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="appDropdown">
-                <a class="dropdown-item">
-                <i class="mdi mdi-settings text-primary"></i>
-                Settings
-                </a>
-                <a class="dropdown-item" href="">
+               <a class="dropdown-item" href="{{Config::get('constants.options.sitelink')}}">
                 <i class="mdi mdi-logout text-primary"></i>
                 Logout
                 </a>
@@ -102,7 +98,7 @@
           <li class="nav-item">
             <a class="nav-link" href="appointment">
             <i class="mdi mdi-drawing-box menu-icon"></i>
-            <span class="menu-title">Upload Appointment Letter</span>
+            <span class="menu-title">Applicant List</span>
             </a>
           </li>
           </ul>
@@ -111,7 +107,7 @@
         <div class="content-wrapper">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Data table</h4>
+              <h4 class="card-title">List of Approved applicant</h4>
               <div class="row">
                 <div class="col-12">
                 @include('applicant.alerts')
@@ -132,13 +128,13 @@
                       {{!$appy=App\result::all()}}
                         <tr>
                         @foreach($appy as $infor)
-                        {{!$info = App\applicant::where('email',$infor->useremail)->first()}}
-                          {{!$data = App\upload::where('filetype','passport')->where('useremail',$infor->useremail)->first()}}
+                        <?php $info = App\applicant::where('email',$infor->useremail)->first() ?>
+                          <?php $data = App\upload::where('filetype','passport')->where('useremail',$infor->useremail)->first() ?>
                             <td>{{$info['appid']}}</td>
                             <td>{{ucwords($info['last_name'])}}</td>
                             <td>{{ucwords($info['first_name'])}},&nbsp;{{ucwords($info['other_name'])}}</td>
                             <td>{{ucwords($info['gender'])}}</td>
-                            {{!$dt = App\post::where('postid',$info['post'])->first()}}
+                           <?php $dt = App\post::where('postid',$info['post'])->first() ?>
                             <td>{{ucwords($dt['post'])}}</td>
                             <td><img src="{{$data['filelocation']}}" style="height:60px; width:55px"/></td>
                             <td>

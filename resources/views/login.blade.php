@@ -9,7 +9,7 @@
 						<div class="account-popup-area signin-popup-box static">
 							<div class="account-popup">
 							@include('alerts')
-								<span>Lorem ipsum dolor sit amet consectetur adipiscing elit odio duis risus at lobortis ullamcorper</span>
+								<span>Login with your register email address and password to continue.</span>
 								{!! Form::open(['url'=>'signin']) !!}
 									<div class="cfield">
 										<input type="text" name="email" placeholder="Username" />

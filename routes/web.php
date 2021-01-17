@@ -41,6 +41,7 @@ Route::get('aptitudetest', 'pagesController@aptitudetest');
 Route::get('checkstatus', 'pagesController@checkstatus');
 Route::get('appointmentletter', 'pagesController@appointmentletter');
 Route::get('timer', 'pagesController@timer');
+Route::get('starttest', 'pagesController@instruction');
 
 
 

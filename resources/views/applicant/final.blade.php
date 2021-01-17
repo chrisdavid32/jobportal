@@ -56,7 +56,7 @@
           <li class="nav-item">
             <a class="nav-link" href="applicant">
             <i class="mdi mdi-application"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apply</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue Application</span>
             </a>
           </li>
 					<li class="nav-item">

@@ -8,7 +8,7 @@
 						<div class="inner2">
 							<div class="inner-title2">
 								<h3>How It Works</h3>
-								<span>Get a digital tour of how FPM recruitment works for you.</span>
+								<span>Get a digital tour of how ADSU recruitment works for you.</span>
 							</div>
 							</div>
 					</div>
@@ -36,8 +36,8 @@
 									<h4> Non Academic Staff</h4>
 									<p>i.Applicant must possess a minimum of OND/NCE in relevant discipline 
                                     </p>
-									<h4> Administration Staff</h4>
-									<p>i.Applicant must possess a minimum of OND/NCE in relevant discipline....
+									<h4> Administrative Staff</h4>
+									<p>i.Applicant must possess a minimum of Dr/Phd in relevant discipline....
 									ii.Computer literacy will be an added advantage 
                                     </p>
 								</div>
@@ -64,7 +64,7 @@
 									<span>3</span>
 									<i class="la la-pencil"></i>
 									<h3>Final Submission</h3>
-									<p>make to fill in all forms properly before clicking on final submission cause there will be no room for editing after submission <br>
+									<p>make sure to fill in all forms properly before clicking on final submission cause there will be no room for editing after submission <br>
 									All uploading file size must be less then 100KB.  </p>
 								</div>
 							</div>

@@ -65,7 +65,7 @@ $dg=App\result::where('useremail',session()->get('useremail'))->first(); ?>
           <li class="nav-item">
             <a class="nav-link" href="applicant">
             <i class="mdi mdi-application"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apply</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue Application</span>
             </a>
           </li>
 					<li class="nav-item active">
@@ -84,7 +84,7 @@ $dg=App\result::where('useremail',session()->get('useremail'))->first(); ?>
            <li class="nav-item">
             <a class="nav-link" href="appointmentletter">
             <i class="mdi mdi-printer"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Appointment Letter</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Acceptence Letter</span>
             </a>
           </li>
           </ul>
@@ -119,7 +119,7 @@ $dg=App\result::where('useremail',session()->get('useremail'))->first(); ?>
                   @else 
 						        	<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">                           
                             <h2> <i class="mdi mdi-information"></i> Take time to read the below Instructions before click the <b>Start Button</b></h2><br/>
-                            <h5>a.&nbsp;Three(3Min) is the total allocated time for your Aptitude make sure to attempt all Question before elapsed time.</h5>
+                            <h5>a.&nbsp;One min 45 sec(1/45Min/sec) is the total allocated time for your Aptitude make sure to attempt all Question before elapsed time.</h5>
                             <h5>b.&nbsp;All Question carry equal mark.</h5>
                             <h5>c.&nbsp;Do not<b> Logout</b> cause the Test is to be written once. </h5>
                             <h5>d.&nbsp;An Attempt to <b>Refresh</b> the Page will Automatically <b>Submit</b> the question</h5><br/>

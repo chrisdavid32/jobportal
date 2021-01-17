@@ -4,7 +4,7 @@
 <!-- Mirrored from grandetest.com/theme/jobhunt-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 May 2019 02:35:11 GMT -->
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>FPM Staff Recruitment</title>
+	<title>ADSU Staff Recruitment</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -31,7 +31,7 @@
 	<div class="responsive-header">
 		<div class="responsive-menubar">
 			<div class="res-logo"><a href="index-2.html" title="">
-			<img src="{{ asset('assets/images/resource/logo.png') }}" alt="" /></a></div>
+			<img src="{{ asset('assets/images/resource/log.png') }}" alt="" /></a></div>
 			<div class="menu-resaction">
 				<div class="res-openmenu">
 					<img src="{{ asset('assets/images/icon.png') }}" alt="" /> Menu
@@ -65,7 +65,7 @@
 							<li><a href="#" title="">Jobs</a>
 							</li>
 							<li class="menu-item">	
-							<a href="#" title="">FPM gallery</a>
+							<a href="#" title="">ADSU gallery</a>
 							</li>
 							<li class="menu-item">
 							<a href="#" title="">Recruit Process</a>
@@ -86,7 +86,7 @@
 		<div class="menu-sec">
 			<div class="container">
 				<div class="logo">
-					<a href="#" title=""><img class="hidesticky" src="{{ asset('assets/images/resource/log.jpeg') }}" alt="" /><img class="showsticky" src="{{ asset('assets/images/resource/log.jpeg') }}" alt="" /></a>
+					<a href="#" title=""><img class="hidesticky" src="{{ asset('assets/images/resource/log.png') }}" alt="adsu" /><img class="showsticky" src="{{ asset('assets/images/resource/log.png') }}" alt="adsu" /></a>
 				</div><!-- Logo -->
 				@if(Request::is('registration')==false)
 				<div class="btn-extars">
@@ -110,7 +110,7 @@
 							<a href="{{Config::get('constants.options.sitelink')}}#jobs" title="">Job</a>
 						</li>
 						<li class="menu-item">
-							<a href="{{Config::get('constants.options.sitelink')}}#gallery" title="">FPM Gallery</a>
+							<a href="{{Config::get('constants.options.sitelink')}}#gallery" title="">ADSU Gallery</a>
 						</li>
 						<li class="menu-item">
 							<a href="{{Config::get('constants.options.sitelink')}}#recruit" title="">Recruit Process</a>
@@ -146,7 +146,7 @@
 									<a href="#" title="">Support</a>
 									<a href="#" title="">Contact Us</a>
 								</div>
-								<span>P.M.B 35 Mubi Adamawa State.</span>
+								<span> Mubi Adamawa State.</span>
 								<span>+2347035202925</span>
 								<span><a href="https://grandetest.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="51383f373e113b3e3339243f257f323e3c">[email&#160;:chrisdavid3271@gmail.com]</a></span>
 							</div>
@@ -156,7 +156,7 @@
 			</div>
 		</div>
 		<div class="bottom-line style2">
-			<span>© 2019 FPM All rights reserved. Design by CHRISDAVID</span>
+			<span>© 2019 ADSU All rights reserved. Design by CHRISDAVID</span>
 			<a href="#scrollup" class="scrollup" title=""><i class="la la-arrow-up"></i></a>
 		</div>
 	</footer>

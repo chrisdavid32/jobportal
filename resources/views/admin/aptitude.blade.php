@@ -18,11 +18,7 @@
               <span class="nav-profile-name">Logout</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="appDropdown">
-                <a class="dropdown-item">
-                <i class="mdi mdi-settings text-primary"></i>
-                Settings
-                </a>
-                <a class="dropdown-item" href="">
+               <a class="dropdown-item" href="{{Config::get('constants.options.sitelink')}}">
                 <i class="mdi mdi-logout text-primary"></i>
                 Logout
                 </a>
@@ -101,7 +97,7 @@
           <li class="nav-item">
             <a class="nav-link" href="appointment">
             <i class="mdi mdi-drawing-box menu-icon"></i>
-            <span class="menu-title">Upload Appointment Letter</span>
+            <span class="menu-title">Applicant List</span>
             </a>
           </li>
           </ul>
@@ -218,6 +214,14 @@
         },
         success: function (data){
          alert(JSON.stringify(data));
+          var category=$("#category").val("");
+          var question=$("#question").val("");
+          var optionA=$("#optionA").val("");
+          var optionB=$("#optionB").val("");
+          var optionC=$("#optionC").val("");
+          var optionD=$("#optionD").val("");
+          var answer=$("#answer").val("");
+         
         }
       });
   });

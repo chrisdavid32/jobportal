@@ -66,7 +66,7 @@
           <li class="nav-item">
             <a class="nav-link" href="applicant">
             <i class="mdi mdi-application"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apply</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue Application</span>
             </a>
           </li>
 					<li class="nav-item ">
@@ -85,15 +85,10 @@
            <li class="nav-item">
             <a class="nav-link" href="appointmentletter">
             <i class="mdi mdi-printer"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Appointment Letter</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Acceptence Letter</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="changepassword">
-            <i class="mdi mdi-drawing-box menu-icon"></i>
-            <span class="menu-title">Change Password</span>
-            </a>
-          </li>
+         
           </ul>
       </nav>
 				<!-- partial -->
@@ -105,8 +100,7 @@
 									<div class="col-sm-6 mb-4 mb-xl-0">
 									@if(!empty(session()->get('useremail')))
 										<h3>WELCOME {{strtoupper($data->last_name)}}, {{ucwords($data->first_name)}}</h3>
-										<h6 class="font-weight-normal mb-0 text-muted">You have done 57.6% more sales today.</h6>
-										@endif
+									@endif
 									</div>
 								</div>
 								<div class="card">
@@ -114,7 +108,7 @@
                 <?php $dt=App\appointment::where('useremail',session()->get('useremail'))->count(); ?>
 								@if($dt > 0)
                   <h1> <i class="mdi mdi-thumb-up-outline"></i> Congratulations</h1><br/><br/>
-                  <h3> You have been offer provisional appointment. </h3>	<br/><br/>
+                  <h3> You are Selected for Physical Interview. </h3>	<br/><br/>
                   <h5>Click to proceed </h5>
                   <a href="appointmentletter">
                     <button class="btn btn-primary"> 
@@ -123,7 +117,7 @@
                   </a>
 								@else 
                   <h1> <i class="mdi mdi-alert-outline" style="color:red;"></i> Oops!</h1><br/><br/>
-                  <h3> No appointment offer at this time. <br/><br/> Kindly check back in two (2) weeks. </h3>	
+                  <h3> No shortlistment at this time. <br/><br/> Kindly check back in two (2) weeks. </h3>	
                 @endif
 							    </div>  		
 							</div>

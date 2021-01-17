@@ -18,11 +18,7 @@
               <span class="nav-profile-name">Logout</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="appDropdown">
-                <a class="dropdown-item">
-                <i class="mdi mdi-settings text-primary"></i>
-                Settings
-                </a>
-                <a class="dropdown-item" href="">
+               <a class="dropdown-item" href="{{Config::get('constants.options.sitelink')}}">
                 <i class="mdi mdi-logout text-primary"></i>
                 Logout
                 </a>
@@ -99,14 +95,19 @@
             <span class="menu-title">Update Applicant Status</span>
             </a>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link" href="appointment">
+            <i class="mdi mdi-drawing-box menu-icon"></i>
+            <span class="menu-title">Applicant List</span>
+            </a>
+          </li>
           </ul>
       </nav>
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Data table</h4>
+              <h4 class="card-title">Aptitude test Result list</h4>
               <div class="row">
                 <div class="col-12">
                 @include('applicant.alerts')

@@ -65,11 +65,11 @@ $dg=App\result::where('useremail',session()->get('useremail'))->first(); ?>
           <li class="nav-item">
             <a class="nav-link" href="applicant">
             <i class="mdi mdi-application"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apply</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue Application</span>
             </a>
           </li>
-					<li class="nav-item active">
-            <a class="nav-link" href="aptitudetest">
+					<li class="nav-item active"> 
+            <a class="nav-link" href="starttest">
             <i class="mdi mdi-pencil menu-icon"></i>
             <span class="menu-title">Take Apptitude Test </span>
             </a>
@@ -84,7 +84,7 @@ $dg=App\result::where('useremail',session()->get('useremail'))->first(); ?>
            <li class="nav-item">
             <a class="nav-link" href="appointmentletter">
             <i class="mdi mdi-printer"></i>
-            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Appointment Letter</span>
+            <span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print Acceptence Letter</span>
             </a>
           </li>
           </ul>
@@ -146,22 +146,22 @@ $dg=App\result::where('useremail',session()->get('useremail'))->first(); ?>
                   <div class="row">
                     <div class="col-md-6">
                       <label class="form-control">
-                        <input type="radio" required="required" name="question{{$sn}}" value="A" /> {{ucfirst($question->option_a)}}
+                        <input type="radio"  name="question{{$question->id}}" value="A" /> {{ucfirst($question->option_a)}}
                       </label>
                     </div>
                     <div class="col-md-6">
                       <label class="form-control">
-                        <input type="radio" required="required"  name="question{{$sn}}" value="B" />  {{ucfirst($question->option_b)}}
+                        <input type="radio"   name="question{{$question->id}}" value="B" />  {{ucfirst($question->option_b)}}
                       </label>
                     </div>
                     <div class="col-md-6">
                       <label class="form-control">
-                        <input type="radio" required="required"   name="question{{$sn}}" value="C" />  {{ucfirst($question->option_c)}}
+                        <input type="radio"   name="question{{$question->id}}" value="C" />  {{ucfirst($question->option_c)}}
                       </label>
                     </div>
                     <div class="col-md-6">
                       <label class="form-control">
-                        <input type="radio" required="required"   name="question{{$sn}}" value="D" />  {{ucfirst($question->option_d)}}
+                        <input type="radio"    name="question{{$question->id}}" value="D" />  {{ucfirst($question->option_d)}}
                       </label>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ $dg=App\result::where('useremail',session()->get('useremail'))->first(); ?>
                Save
             </span>
 
-            <button style="float:right; display:none;" id="pussy" class="btn btn-success">
+            <button style="float:right; display:none;" id="puy" class="btn btn-success">
               <i class="mdi mdi-marker-check"></i>
               Submit
             </button>
@@ -203,9 +203,9 @@ App\result::where('useremail',session()->get('useremail'))->update(['stat'=>'1']
                     <script src="{{ asset('js/jquery.min.js') }}"></script>  
                     <script>
         $('#conf').on('click', function(){
-          confirm('Are sure to ');
+          confirm('Are sure to submit');
           document.getElementById('conf').style.display="none";
-          document.getElementById('pussy').style.display="block";
+          document.getElementById('puy').style.display="block";
         });
 
         $('#timer').load('timer');

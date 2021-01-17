@@ -8,7 +8,7 @@
     
     $(document).ready(function() {
 
-      clock = $('.clock').FlipClock(300, {
+      clock = $('.clock').FlipClock(105, {
             clockFace: 'MinuteCounter',
             countdown: true,
             callbacks: {
@@ -17,7 +17,7 @@
                 document.getElementById('timer').style.display="none";
                 document.getElementById('conf').style.display="none";
                 document.getElementById('questionbody').style.display="none";
-                document.getElementById('pussy').style.display="block";
+                document.getElementById('puy').style.display="block";
                 document.getElementById('timeout').style.display="block";
               }
             }
